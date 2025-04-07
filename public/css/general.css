@@ -1,0 +1,81 @@
+/* Fuente seleccionada */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Colores elegidos */
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family:Inter;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f2ecd3;
+}
+
+
+
+
+main{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+
+
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    color: rgb(75, 113, 114);
+}
+h1{
+    font-size:Regular 400;
+}
+.main-btn{
+    background-color:#d4e7c4;
+    border-radius: 4px;
+}
+
+
+/*------------------------------------------------------------Tarjetas-------------------------------------------------------------------------*/
+
+
+/*Tarjeta para login*/
+
+
+
+/*Modal para añadir tareas o proyectos*/
+#formOverlay.activa{
+    display: flex;
+    transition: all 0.35s ease-in;
+}
+
+.activa{
+    display: flex;
+    transition: all 0.35s ease-in;
+}
+
+
+/*Botones*/
+
+/*Este botón es el que hace hoover para ser más pequeño NO AÑADIR ESTA CLASE A BOTONES DE LOGIN/ACCESO etc*/
+.addBtn{
+    width: 40px;
+    border: none;
+    background: none;
+}
+
+.addBtn :hover{
+    width: 1rem;
+}
+
+.closeCard{
+    align-self: flex-end;
+}

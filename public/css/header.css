@@ -1,0 +1,25 @@
+
+
+
+/* Estilos específicos para el header */
+#header {
+    width: 100%;
+    background-color: #cbcdce;
+    display: flex;
+    align-items: center;
+}
+
+
+.headerOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    text-align: start;
+    width: 80%;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

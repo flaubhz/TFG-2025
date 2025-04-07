@@ -1,0 +1,38 @@
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #cbcdce;
+    align-items: center;
+    gap:2rem;
+}
+.footerLinks{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 32rem;
+margin-top: 2%;
+margin-right: 2%;
+}
+
+
+.socialMedia{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 40rem;
+}
+
+.rights{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+img{
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+

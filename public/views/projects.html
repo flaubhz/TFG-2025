@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/general.css">
+    <link rel="stylesheet" href="../../public/css/header.css">
+    <link rel="stylesheet" href="../../public/css/footer.css">
+    <link rel="stylesheet" href="../../public/css/project.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Proyectos</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="titleContainer">
+            <h1>Tus proyectos</h1>
+        </div>
+        
+        <div class="addProject">
+            <p>Añadir Proyecto</p>
+            <button id="addProjectBtn" class="addBtn">
+                <img id="addIcon" src="../imgs/icons/plus-circle-svgrepo-com.svg" alt="add-project">
+            </button>
+        </div>
+        
+        <div class="projectsContainer" id="projectsContainer">
+            <div id="formOverlay">
+                <form id="formAddProject">
+                            <div class="card">
+                                <button type="button" id="closeCard" class="closeCard">X</button>
+                                <div class="campo">
+                                    <input name="name" id="name" type="text" placeholder="nombre del proyecto">
+                                </div>
+                                <div class="campo">
+                                    <button type="button" id="save-btn" class="main-btn">Guardar</button>
+                                </div>
+                                <div class="campo" id="datos"></div>
+                            </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/addProject.js"></script>
+    <script src="../js/loadProjects.js"></script>
+</body>
+</html>

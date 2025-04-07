@@ -1,0 +1,27 @@
+.formCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#D7D7D7;
+    border-radius: 10px;
+
+}
+
+.fieldTitle{
+    font-size:small;
+    font-weight: bold;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    padding: 0.5rem;
+}
+
+.campo input{
+    border-radius: 6px;
+    border: none;
+    width:100%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/general.css">
+    <link rel="stylesheet" href="../../public/css/header.css">
+    <link rel="stylesheet" href="../../public/css/footer.css">
+    <link rel="stylesheet" href="../../public/css/scheme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Esquema</title>
+</head>
+<body>
+    <header id="header"></header>
+    <main id="main">
+        <div class="scheme-nav">
+            <input id="proyecto" type="text" placeholder="Nombre del proyecto">
+        </div>
+        <div class="addTask">
+            <p>Añadir tarea</p>
+            <button id="addTaskBtn" class="addBtn">
+                <img id="addIcon" src="../imgs/icons/plus-circle-svgrepo-com.svg" alt="add-task">
+            </button>
+        </div>
+        <div class="schemeTasks">
+            <div class="start" id="start">
+                <h2>Iniciado</h2>
+            </div>
+            <div class="inProcess" id="inProcess">
+                <h2>En proceso</h2>
+            </div>
+            <div class="end" id="end">
+                <h2>Finalizado</h2>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+
+    <div id="formOverlay">
+        <form id="formAddTarea">
+                    <div class="card">
+                        <button type="button" id="closeCard" class="closeCard">X</button>
+                        <div class="campo">
+                            <input name="name" id="name" type="text" placeholder="nombre de la tarea" required>
+                        </div>
+                        <div class="campo">
+                            <input name="responsible" id="responsible" type="text" placeholder="encargado/s" required>
+                        </div>
+                        <div class="campo">
+                            <input name="deadline" id="deadline" type="date" placeholder="fecha límite" required>
+                        </div>
+                        <div class="campo">
+                            <select name="prioridad" id="priorities" required>
+                                <option id="prt" value="0">Prioridad</option>
+                                <option id="Low" value="1">Baja</option>
+                                <option id="Middle" value="2">Media</option>
+                                <option id="High" value="3">Elevada</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <select name="state" id="states" required>
+                                <option id="ste" value="0">Estado</option>
+                                <option id="Low" value="1">Iniciado</option>
+                                <option id="Middle" value="2">En proceso</option>
+                                <option id="High" value="3">Finalizado</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <button type="button" id="save-btn" class="main-btn">Guardar</button>
+                        </div>
+                        <div class="campo" id="datos"></div>
+                    </div>
+                </form>
+    </div>
+    </div>
+    <script src="../js/addTask.js"></script>
+    <script src="../js/loadTasks.js"></script>
+</body>
+</html>

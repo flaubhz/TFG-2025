@@ -1,0 +1,139 @@
+
+
+.schemeTasks{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 95%;
+        margin:  0 auto;
+}
+
+/* Estilo de tarjeta default para tareas Iniciadas*/
+.start{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border-radius: 4px;
+    background-color: #D7D7D7;
+    text-align: center;
+    align-items: center;
+    width:100%;
+}
+
+/* Estilo de tarjeta default para tareas En proceso*/
+.inProcess{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border-radius: 4px;
+    background-color: #D7D7D7;
+    text-align: center;
+    align-items: center;
+    width:100%;
+}
+
+/* Estilo de tarjeta default para tareas Terminadas*/
+.end{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border-radius: 4px;
+    background-color: #D7D7D7;
+    text-align: center;
+    align-items: center;
+    width:100%;
+}
+
+/* Ocultar el formulario y el overlay al principio */
+#formOverlay {
+    position: fixed;  /* Fija el overlay en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(79, 79, 79, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+}
+
+/* Estilo para la tarjeta de Añadir tarea */
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    flex:1;
+    border-radius: 8px;
+    background-color: #f2ecd3;
+    text-align: center;
+    align-items: center;
+    gap:0.5rem;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    padding: 0.5rem;
+}
+
+.campo input{
+    border-radius: 6px;
+    border: none;
+    width:100%;
+}
+
+.campo select{
+    border-radius: 8px;
+    border: none;
+}
+
+select{
+    background-color: #d7d7d7;
+}
+.addTask{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+
+#formOverlay.activa{
+    display: flex;
+    transition: all 0.35s ease-in;
+}
+
+.activa{
+    display: flex;
+    transition: all 0.35s ease-in;
+}
+
+
+
+#prioridad{
+    color: #298f95;
+}
+
+#Baja{
+    color: #298f95;
+}
+
+#Media{
+    color: #298f95;
+}
+
+#Elevada{
+    color: #298f95;
+}
+
+.taskCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3eeee;
+    border-radius: 10px;
+    width: 80%;
+    border-color: rgb(0, 0, 0);
+}
